@@ -8,11 +8,17 @@ Foi desenvolvido uma plataforma de eventos com cadastro de usu√°rio e apresenta√
 
 - React JS
 
+- Typescript
+
+- Vite
+
+- Tailwind CSS
+
+- Apollo
+
 - GraphQL
 
 - GraphCMS
-
-- Tailwind CSS
 
 ### Figma
 
