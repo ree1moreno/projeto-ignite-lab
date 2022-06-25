@@ -12,4 +12,12 @@ Foi desenvolvido uma plataforma de eventos com cadastro de usuário e apresenta�
 
 - GraphCMS
 
-- TailWind CSS
+- Tailwind CSS
+
+### Figma
+
+<a href="https://www.figma.com/file/iMmFIxnjn6jG1mufPMhBlA/Plataforma-de-evento---Ignite-Lab-(Community)?node-id=0%3A1">Layout</a>
+
+## Página
+
+Acesse a <a href="#">página</a> do projeto.
