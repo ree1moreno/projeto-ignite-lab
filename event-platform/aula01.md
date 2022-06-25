@@ -1,19 +1,19 @@
 ## passo a passo da aula 01
 
-1. criar o projeto react utilizando o Vite
-    ```npx create vite @latest```
+1. criar o projeto react utilizando o Vite <br>
+   `npx create vite @latest`
 
-2. abrir a pasta do projeto e instalar dependências
-    ```npm i```
+2. abrir a pasta do projeto e instalar dependências <br>
+   `npm i`
 
-3. abrir a aplicação no navegador
-    ```npm run dev```
+3. abrir a aplicação no navegador <br>
+   `npm run dev`
 
-4. instalar o Tailwind CSS, PostCSS e autoprefixer como ferramentas de desenvolvimento
-   ```npm i tailwindcss postcss autoprefixer -D```
+4. instalar o Tailwind CSS, PostCSS e autoprefixer como ferramentas de desenvolvimento <br>
+   `npm i tailwindcss postcss autoprefixer -D`
 
-5. criar o arquivo de configuração do PostCSS (ferramenta para automatizar tarefas do CSS)
-    ```npx tailwindcss init -p```
+5. criar o arquivo de configuração do PostCSS (ferramenta para automatizar tarefas do CSS) <br>
+   `npx tailwindcss init -p`
 
 6. adicionar conteúdo nas configurações do tailwind.config
 
@@ -25,7 +25,7 @@
 
 10. pegar o link da API nas configurações do projeto > API Acess > Content API
 
-11. instalar o Apollo (ferramenta para requisição feita para GraphQL) e o GraphQL
-    ```npm i @apollo/client graphql```
+11. instalar o Apollo (ferramenta para requisição feita para GraphQL) e o GraphQL <br>
+    `npm i @apollo/client graphql`
 
 12. criar arquivo de configuração do apollo dentro da pasta lib
