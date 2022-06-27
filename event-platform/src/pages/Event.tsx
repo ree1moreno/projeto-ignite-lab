@@ -4,19 +4,16 @@ import { Sidebar } from "../components/Sidebar";
 import { Video } from "../components/Video";
 
 export function Event() {
-  const { slug } = useParams<{ slug: string}>()
-  const primarySlug = '/event/lesson/abertura-do-ignite-lab'
+  const { slug } = useParams<{ slug: string }>();
+  const primarySlug = "/event/lesson/abertura-do-ignite-lab";
 
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex flex-1">
-        { slug 
-          ? <Video lessonSlug={slug}/> 
-          : <Navigate to={primarySlug} /> 
-        }
+        {slug ? <Video lessonSlug={slug} /> : <Navigate to={primarySlug} />}
         <Sidebar />
-      </main>      
+      </main>
     </div>
-  )
+  );
 }

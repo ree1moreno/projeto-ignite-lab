@@ -1,14 +1,13 @@
-import { gql, useMutation } from "@apollo/client";
 import { FormEvent, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import codeMockupImg from "../assets/code-mockup.png";
 import { Logo } from "../components/Logo";
 import { useCreateSubscriberMutation } from "../generated";
-import codeMockupImg from '../assets/code-mockup.png'
 
 export function Subscribe() {
   const navigate = useNavigate();
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
 
   const [createSubscriber, { loading }] = useCreateSubscriberMutation();
 
@@ -18,9 +17,9 @@ export function Subscribe() {
       variables: {
         name,
         email,
-      }
+      },
     });
-    navigate('/event');
+    navigate("/event");
   }
 
   return (
@@ -29,10 +28,14 @@ export function Subscribe() {
         <div className="max-w-[640px]">
           <Logo />
           <h1 className="mt-8 text-[2.5rem] leading-tight">
-            Construa uma <strong className="text-blue-500">aplicação completa</strong>, do zero, com <strong className="text-blue-500">React JS</strong>
+            Construa uma{" "}
+            <strong className="text-blue-500">aplicação completa</strong>, do
+            zero, com <strong className="text-blue-500">React JS</strong>
           </h1>
           <p className="mt-4 text-gray-200 leading-relaxed">
-            Em apenas uma semana você vai dominar na prática uma das tecnologias mais utilizadas e com alta demanda para acessar as melhores oportunidades do mercado.
+            Em apenas uma semana você vai dominar na prática uma das tecnologias
+            mais utilizadas e com alta demanda para acessar as melhores
+            oportunidades do mercado.
           </p>
         </div>
 
@@ -41,18 +44,21 @@ export function Subscribe() {
             Inscreva-se gratuitamente
           </strong>
 
-          <form onSubmit={handleSubscribe} className="flex flex-col gap-2 w-full">
+          <form
+            onSubmit={handleSubscribe}
+            className="flex flex-col gap-2 w-full"
+          >
             <input
               className="bg-gray-900 rounded px-5 h-14"
-              type="text" 
+              type="text"
               placeholder="Seu nome completo"
-              onChange={event => setName(event.target.value)}
+              onChange={(event) => setName(event.target.value)}
             />
             <input
               className="bg-gray-900 rounded px-5 h-14"
-              type="email" 
+              type="email"
               placeholder="Digite seu email"
-              onChange={event => setEmail(event.target.value)}
+              onChange={(event) => setEmail(event.target.value)}
             />
 
             <button
@@ -66,11 +72,7 @@ export function Subscribe() {
         </div>
       </div>
 
-      <img
-        className="mt-10"
-        src={codeMockupImg}
-        alt="" 
-      />
+      <img className="mt-10" src={codeMockupImg} alt="" />
     </div>
-  )
+  );
 }

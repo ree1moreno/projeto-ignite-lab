@@ -9,9 +9,7 @@ export function Footer() {
           Rocketseat - Todos os direitos reservados
         </span>
       </div>
-      <p className="text-gray-300 text-sm">
-        Políticas de privacidade
-      </p>
+      <p className="text-gray-300 text-sm">Políticas de privacidade</p>
     </footer>
-  )
+  );
 }
