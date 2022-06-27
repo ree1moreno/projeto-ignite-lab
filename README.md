@@ -26,4 +26,4 @@ Foi desenvolvido uma plataforma de eventos com cadastro de usuário e apresenta�
 
 ## Página
 
-Acesse a <a href="#">página</a> do projeto.
+Acesse a <a href="https://projeto-ignite-lab-self.vercel.app/">página</a> do projeto.
