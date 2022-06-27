@@ -10,6 +10,7 @@ import { useGetLEssonBySlugQuery } from "../generated";
 import { Footer } from "./Footer";
 
 import "@vime/core/themes/default.css";
+import { Loading } from "./Loading";
 interface VideoProps {
   lessonSlug: string;
 }
@@ -23,8 +24,8 @@ export function Video(props: VideoProps) {
 
   if (!data || !data.lesson) {
     return (
-      <div className="flex-1">
-        <p>Carregando...</p>
+      <div className="flex-1 flex justify-center items-center scale-150">
+        <Loading />
       </div>
     );
   }
