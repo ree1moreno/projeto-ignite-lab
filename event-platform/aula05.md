@@ -16,4 +16,4 @@
 
 6. atualiza os componentes para fazer as requisições com os novos hooks criados pelo codegen
 
-7. faz o deploy pela<a href="https://vercel.com/"> Vercel</a>
+7. faz o deploy pela <a href="https://vercel.com/">Vercel</a>
