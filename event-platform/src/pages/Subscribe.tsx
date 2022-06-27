@@ -8,6 +8,7 @@ export function Subscribe() {
   const navigate = useNavigate();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const isValid = name.length > 0 && email.length > 0;
 
   const [createSubscriber, { loading }] = useCreateSubscriberMutation();
 
@@ -64,7 +65,7 @@ export function Subscribe() {
             <button
               className="mt-4 bg-green-500 uppercase py-4 rounded font-bold text-sm hover:bg-green-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               type="submit"
-              disabled={loading}
+              disabled={loading || !isValid}
             >
               Garantir minha vaga
             </button>
